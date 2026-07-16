@@ -44,6 +44,8 @@ DJANGO_APPS = [
 
 LOCAL_APPS = [
     "pages.apps.PagesConfig",
+    "chefs.apps.chefsConfig",
+    "listings.apps.listingsConfig",
 ]
 
 THIRD_PARTY_APPS = []
