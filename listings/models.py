@@ -2,12 +2,12 @@ from django.db import models
 from chefs.models import Chef
 
 # Create your models here.
-class listing(models,Model):
+class listing(models.Model):
     chef = models.ForeignKey(Chef, on_delete=models.DO_NOTHING)
-    title = models.CharField(max_lenth=200)
-    address = models.CharField(max_lenth=200)
-    district = models.CharField(max_lenth=50)
-    choices = models.CharField(max_lenth=50)
+    title = models.CharField(max_length=200)
+    address = models.CharField(max_length=200)
+    district = models.CharField(max_length=50)
+    choices = models.CharField(max_length=50)
     description = models.TextField(blank=True)
     service = models.IntegerField()
     room_type = models.CharField(max_length=50)
