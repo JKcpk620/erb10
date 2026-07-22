@@ -4,7 +4,7 @@ from django.db import models
 
 class Chef(models.Model):
     name = models.CharField(max_length=200)
-    protriat = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    portrait = models.ImageField(upload_to='photos/%Y/%m/%d/')
     bio = models.TextField(blank=True)
     phone = models.CharField(max_length=20)
     email = models.CharField(max_length=50)

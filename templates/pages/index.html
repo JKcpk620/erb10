@@ -122,8 +122,7 @@
                 <div class="col-6"><i class="fas fa-star"></i> {{ listing.rating }} </div>
                 <div class="col-6"><i class="fas fa-clock"></i> {%  if current_time >= listing.opening_hours and current_time < listing.closing_hours %}Open Now {% else %}Closed {% endif %} </div>
             </div>
-            {% comment %} listing {% endcomment %}
-            <a href="listing.html" class="btn btn-danger btn-block mt-3">View Details</a>
+            <a href= {% url 'listings:listing' listing.id %} class="btn btn-danger btn-block mt-3">View Details</a>
             </div> 
         </div>
         </div>
