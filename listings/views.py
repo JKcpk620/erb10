@@ -51,5 +51,10 @@ def search(request):
     paginator = Paginator(queryset_list, 3)
     page_number = request.GET.get('page')
     paged_listings = paginator.get_page(page_number)
-    context = {'listings':paged_listings, 'current_time' : current_time, 'category_choices' : category_choices, 'district_choices' : district_choices, 'price_choices' : price_choices, 'values' : request.GET}
+    context = {'listings':paged_listings, 
+               'current_time' : current_time, 
+               'category_choices' : category_choices, 
+               'district_choices' : district_choices, 
+               'price_choices' : price_choices, 
+               'values' : request.GET}
     return render(request, 'listings/search.html', context)

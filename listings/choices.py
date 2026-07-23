@@ -1,7 +1,6 @@
 district_choices = {
 'Islands' : 'Islands',
-'Kwai T' : 'Kwai T',
-'sing' : 'sing',
+'Kwai Tsing' : 'Kwai Tsing',
 'North' : 'North',
 'Sai Kung' : 'Sai Kung',
 'Sha Tin' : 'Sha Tin',
@@ -25,7 +24,7 @@ category_choices = {
 'Chinese' : 'Chinese',
 'Thai' : 'Thai',
 'Italian' : 'Italian',
-'Mexican' : 'Me,xican',
+'Mexican' : 'Mexican',
 'Korean' : 'Korean',
 'Vietnamese' : 'Vietnamese' ,
 }
